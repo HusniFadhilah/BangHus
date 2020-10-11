@@ -1,0 +1,1 @@
+<div class="flash-data" data-text="<?=$this->session->flashdata('text');?>" data-title="<?=$this->session->flashdata('title');?>" data-icon="<?=$this->session->flashdata('icon');?>"></div>
