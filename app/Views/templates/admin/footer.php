@@ -47,9 +47,9 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script src="<?= base_url() ?>/assets/vendor/jquery/jquery.min.js"></script>
+<script src="<?= base_url() ?>/assets/js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
-<script src="<?= base_url() ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url() ?>/assets/js/bootstrap.bundle.min.js"></script>
 
 <!-- Page level plugins -->
 <script src="<?= base_url() ?>/assets/vendor/datatables/jquery.dataTables.min.js"></script>
