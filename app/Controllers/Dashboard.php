@@ -2,11 +2,11 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class Dashboard extends BaseController
 {
 	public function index()
 	{
-		return view('public/index.html');
+		return view('public/dashboard/index');
 	}
 
 	//--------------------------------------------------------------------
