@@ -14,6 +14,48 @@
         Home
       </div>
 
+      <!-- Nav Item - Home -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="home">
+          <i class="fas fa-fw fa-home"></i>
+          <span>Home</span>
+        </a>
+        <div id="home" class="collapse" aria-labelledby="headingUtilities" data-parent="">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item pl-2" href="<?= site_url('admin') ?>">
+              <i class="fas fa-fw fa-tachometer-alt mr-1"></i>
+              <span>Dashboard</span></a>
+            <a class="collapse-item pl-2" href="">
+              <i class="fas fa-fw fa-user mr-1"></i>
+              <span>My Profile</span></a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Artikel
+      </div>
+
+      <!-- Artikel -->
+      <li class="nav-item">
+        <a class="nav-link" href="">
+          <i class="fas fa-fw fa-newspaper"></i>
+          <span>Artikel</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="">
+          <i class="fas fa-fw fa-list"></i>
+          <span>Kategori Artikel</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider mb-0">
+
       <!-- Logout -->
       <li class="nav-item">
         <a class="nav-link" href="">

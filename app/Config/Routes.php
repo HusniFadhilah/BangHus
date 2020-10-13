@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Dashboard::index');
 
+$routes->get('/post/(:segment)', 'Post::detail/$i');
 /**
  * --------------------------------------------------------------------
  * Additional Routing

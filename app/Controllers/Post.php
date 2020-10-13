@@ -14,16 +14,28 @@ class Post extends BaseController
 
     public function index()
     {
-        $post = $this->postModel->findAll();
 
         $data = [
             'title' => 'Artikel',
-            'post' => $post
+            'post' => $this->postModel->getPost()
         ];
 
         return view('public/post/post', $data);
     }
 
-    //--------------------------------------------------------------------
+    public function detail($id)
+    {
 
+        $data = [
+            'title' => $id,
+            'post' => $this->postModel->getPost($id)
+        ];
+
+        // jika artikel tidak ada di tabel
+        if (empty($data['post'])) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Artikel tidak ditemukan');
+        }
+
+        return view('public/post/single-post', $data);
+    }
 }

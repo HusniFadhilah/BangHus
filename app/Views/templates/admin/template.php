@@ -4,9 +4,10 @@
 
 <?= $this->include('templates/admin/topbar') ?>
 
+<?= $this->include('templates/admin/titlepage') ?>
 
 <!-- Isi Konten -->
-<?= $this->renderSection('content') ?>
+<?= $this->renderSection('contentadmin') ?>
 <!-- Akhir dari Isi Konten -->
 
 
