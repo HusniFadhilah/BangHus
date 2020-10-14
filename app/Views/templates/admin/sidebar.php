@@ -54,6 +54,27 @@
       </li>
 
       <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        User
+      </div>
+
+      <!-- Artikel -->
+      <li class="nav-item">
+        <a class="nav-link" href="<?= site_url('penulis') ?>">
+          <i class="fas fa-fw fa-user"></i>
+          <span>Penulis</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Admin</span></a>
+      </li>
+
+      <!-- Divider -->
       <hr class="sidebar-divider mb-0">
 
       <!-- Logout -->
