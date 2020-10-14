@@ -47,29 +47,30 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script src="<?= base_url() ?>/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
-<script src="<?= base_url() ?>/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
 
 <!-- Page level plugins -->
-<script src="<?= base_url() ?>/assets/vendor/datatables/jquery.dataTables.min.js"></script>
-<script src="<?= base_url() ?>/assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+<script src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js"></script>
 
 <!-- Core plugin JavaScript-->
-<script src="<?= base_url() ?>/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <!-- PACE -->
-<script src="<?= base_url() ?>/assets/plugin/pace/pace.min.js"></script>
+<script src="/assets/plugin/pace/pace.min.js"></script>
 
 <!-- Custom scripts for all pages-->
-<script src="<?= base_url() ?>/assets/js/sb-admin-2.min.js"></script>
+<script src="/assets/js/sb-admin-2.min.js"></script>
 
 <!-- SweetAlert -->
-<script src="<?= base_url() ?>/assets/js/sweetalert2.all.min.js"></script>
+<script src="/assets/js/sweetalert2.all.min.js"></script>
 
 <!-- panggil adapter jquery ckeditor -->
-<script src="<?= base_url() ?>/assets/vendor/ckeditor4/ckeditor.js" type="text/javascript"></script>
-<script src="<?= base_url() ?>/assets/vendor/ckeditor4/adapters/jquery.js" type="text/javascript"></script>
+<script src="/assets/vendor/ckeditor4/ckeditor.js" type="text/javascript"></script>
+<script src="/assets/vendor/ckeditor4/adapters/jquery.js" type="text/javascript"></script>
 
 <script type="text/javascript">
   $(document).ajaxStart(function() {
@@ -77,6 +78,7 @@
   });
   $(document).ready(function() {
     $('#post').DataTable({});
+    $('#penulis').DataTable({});
     $('#texteditor').ckeditor();
   })
 </script>

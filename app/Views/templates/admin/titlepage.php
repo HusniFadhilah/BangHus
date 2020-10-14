@@ -8,7 +8,7 @@
             <small>
                 <ol class="breadcrumb">
                     <li><a href="" class="text-decoration-none text-gray-800 mr-2"><i class="icon-dashboard"></i> Home</a></li>
-                    <li class="active"><i class="ion-ios-arrow-forward mr-2"></i>Menu</li>
+                    <li class="active"><i class="fa fa-chevron-right mr-2"></i>Menu</li>
                 </ol>
             </small>
         </div>
