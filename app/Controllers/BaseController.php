@@ -27,7 +27,7 @@ class BaseController extends Controller
 	 *
 	 * @var array
 	 */
-	protected $helpers = [];
+	protected $helpers = ['fungsi_helper'];
 
 	/**
 	 * Constructor.
@@ -43,5 +43,6 @@ class BaseController extends Controller
 		// E.g.:
 		// $this->session = \Config\Services::session();
 		session();
+		helper(['fungsi_helper']);
 	}
 }

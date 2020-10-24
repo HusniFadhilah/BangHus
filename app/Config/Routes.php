@@ -33,7 +33,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Dashboard::index');
 
-$routes->get('/post/(:segment)', 'Post::detail/$i');
+$routes->delete('/penulis/(:num)', 'Penulis::delete/$1');
+$routes->get('/auth/login', 'Auth::login');
 /**
  * --------------------------------------------------------------------
  * Additional Routing

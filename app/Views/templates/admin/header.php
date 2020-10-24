@@ -24,7 +24,7 @@
   <link href="<?= base_url() ?>/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 
   <!-- Pace style -->
-  <link rel="stylesheet" href="<?= base_url() ?>/assets/plugin/pace/pace.min.css">
+  <link rel="stylesheet" href="/assets/plugin/pace/pace.min.css">
 
   <!-- Custom styles for this template -->
 

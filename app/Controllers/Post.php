@@ -23,19 +23,39 @@ class Post extends BaseController
         return view('public/post/post', $data);
     }
 
-    public function detail($id)
-    {
+    // public function detail($id)
+    // {
 
+    //     $data = [
+    //         'title' => $id,
+    //         'post' => $this->postModel->getPost($id)
+    //     ];
+
+    //     // jika artikel tidak ada di tabel
+    //     if (empty($data['post'])) {
+    //         throw new \CodeIgniter\Exceptions\PageNotFoundException('Artikel tidak ditemukan');
+    //     }
+
+    //     return view('public/post/single-post', $data);
+    // }
+
+    public function add()
+    {
         $data = [
-            'title' => $id,
-            'post' => $this->postModel->getPost($id)
+            'title' => 'Tambah Post',
         ];
 
-        // jika artikel tidak ada di tabel
-        if (empty($data['post'])) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Artikel tidak ditemukan');
-        }
+        return view('admin/post/post_form_add', $data);
+    }
 
-        return view('public/post/single-post', $data);
+    public function save()
+    {
+        $this->postModel->save([
+            'isi_post' => $this->request->getVar('isipost'),
+        ]);
+
+        $this->sweetalert('Penulis berhasil ditambahkan', 'success', 'Berhasil!');
+
+        return redirect()->to('/post');
     }
 }

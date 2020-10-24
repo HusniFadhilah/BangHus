@@ -40,7 +40,7 @@
       <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
       <div class="modal-footer">
         <button class="btn btn-danger" type="button" data-dismiss="modal">Cancel</button>
-        <a class="btn btn-success" href="">Logout</a>
+        <a class="btn btn-success" href="/auth/logout">Logout</a>
       </div>
     </div>
   </div>
@@ -81,6 +81,39 @@
     $('#penulis').DataTable({});
     $('#texteditor').ckeditor();
   })
+</script>
+<script type="text/javascript">
+  const textflashData = $('.flash-data').data('text');
+  const titleflashData = $('.flash-data').data('title');
+  const iconflashData = $('.flash-data').data('icon');
+
+  if (textflashData && titleflashData && iconflashData) {
+    Swal.fire({
+      title: titleflashData,
+      text: textflashData,
+      icon: iconflashData
+    });
+  }
+
+  $('.tombol-hapus').on('click', function(e) {
+    e.preventDefault();
+    const textflashData = $(this).data('text');
+    const href = $(this).attr('href');
+
+    Swal.fire({
+      title: 'Apakah Anda yakin?',
+      text: 'Data ' + textflashData + ' ini akan dihapus',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Ya, hapus data!'
+    }).then((result) => {
+      if (result.value) {
+        document.location.href = href;
+      }
+    });
+  });
 </script>
 
 </body>

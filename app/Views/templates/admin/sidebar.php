@@ -79,7 +79,7 @@
 
       <!-- Logout -->
       <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="/auth/logout">
           <i class="fas fa-fw fa-sign-out-alt"></i>
           <span>Logout</span></a>
       </li>

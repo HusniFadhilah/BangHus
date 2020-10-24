@@ -33,7 +33,7 @@
                                     <td><?= $p["alamat"] ?></td>
                                     <td>
                                         <a href="" class="btn btn-warning btn-sm mt-1" title="Edit galeri"><i class="fa fa-edit"></i></a>
-                                        <a href="" class="btn btn-danger btn-sm mt-1 tombol-hapus" data-text="" title="Delete galeri"><i class="fa fa-trash"></i></a>
+                                        <a href="/penulis/delete/<?= $p["idpenulis"] ?>" class="btn btn-danger btn-sm mt-1 tombol-hapus" data-text="<?= $title ?>" title="Hapus penulis"><i class="fa fa-trash"></i></a>
                                     </td>
                                 </tr>
                             <?php endforeach ?>

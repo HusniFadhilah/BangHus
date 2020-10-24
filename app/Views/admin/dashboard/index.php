@@ -4,7 +4,7 @@
 <!-- Page Heading -->
 <div class="halo">
     <hr />
-    <h4>Halo <strong>Admin</strong></h4>
+    <h4>Halo <strong><?= session()->get('email') ?></strong></h4>
     Selamat Datang di <b>Dashboard Penulis Web MyBlog</b><br>
     Kamu adalah <b>Penulis</b>
     <hr />

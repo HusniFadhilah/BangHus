@@ -11,6 +11,8 @@ class PostModel extends Model
 
     protected $returnType     = 'array';
 
+    protected $allowedFields = ['isi_post'];
+
     protected $useTimestamps = true;
     protected $createdField  = 'tgl_insert';
     protected $updatedField  = 'tgl_update';
@@ -19,12 +21,12 @@ class PostModel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
-    public function getPost($id = false)
-    {
-        if ($id === false) {
-            return $this->findAll();
-        }
+    // public function getPost($id = false)
+    // {
+    //     if ($id === false) {
+    //         return $this->findAll();
+    //     }
 
-        return $this->postModel->where(['idpost' => $id])->first();
-    }
+    //     return $this->postModel->where(['idpost' => $id])->first();
+    // }
 }
