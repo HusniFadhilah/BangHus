@@ -1,4 +1,4 @@
-name: PHP Composer
+name: Beta Deployment
 
 on:
   push:
